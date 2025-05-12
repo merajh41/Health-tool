@@ -3,54 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FitMate Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>FitMate</h1>
-    <p>Your Smart Health Companion</p>
-  </header>
+  <title>FitMate – Health & Diet Tracker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <main>
-    <!-- Meal Tracker -->
-    <section class="card" id="meal-tracker">
-      <h2>Meal Tracker</h2>
-      <form id="meal-form">
-        <input type="text" id="meal-name" placeholder="Food Name" required />
-        <input type="number" id="meal-calories" placeholder="Calories" required />
-        <button type="submit">Add Meal</button>
-      </form>
-      <table>
-        <thead>
-          <tr>
-            <th>Food</th>
-            <th>Calories</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="meal-table-body">
-          <!-- dynamic rows -->
-        </tbody>
-      </table>
-      <p>Total Calories: <span id="total-calories">0</span> kcal</p>
-    </section>
-
-    <!-- Water Tracker -->
-    <section class="card" id="water-tracker">
-      <h2>Water Tracker</h2>
-      <div class="water-controls">
-        <button id="drink-one">+1 Cup</button>
-        <button id="reset-water">Reset</button>
-      </div>
-      <p>Cups Drunk Today: <span id="water-count">0</span></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 FitMate</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    body {
+      font
